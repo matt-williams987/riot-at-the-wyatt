@@ -18,6 +18,7 @@ statesJS.boot = {
             "other": Phaser.KeyCode.I,
         };
         kb.addCallbacks(window, keypressed);
+        kb.addKeyCapture(keys)
         game.time.desiredFps = FPS;
         game.scale.pageAlignHorizontally =true;
         game.load.image('bottle', '/assets/whiskey1-small.png');
